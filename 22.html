@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h3>Fahrenheit ka Celsius</h3>
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="text" placeholder="Fahrenheit"
+  oninput="temperatureConverter(this.value)"
+  onchange="temperatureConverter(this.value)">
+</p>
+<p>Celsius: <span id="outputCelsius"></span></p>
+<script type="text/javascript">
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelsius").innerHTML = (valNum-32) / 1.8;
+}
+</script>
+<!-------------------------------- batas---------------------------->
+
+<h3>Fahrenheit ka Kelvin</h3>
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="text" placeholder="Fahrenheit" oninput="temperatureConverter1(this.value)" onchange="temperatureConverter1(this.value)">
+</p>
+<p>Kelvin: <span id="outputKelvin"></span></p>
+
+<script>
+function temperatureConverter1(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputKelvin").innerHTML=((valNum-32)/1.8)+273.15;
+}
+</script>
+<!-------------------------------- batas---------------------------->
+
+<h3>Celcius ka Fahrenheit</h3>
+<p>
+  <label>Celsius</label>
+  <input id="inputCelsius" type="text" placeholder="Celsius" oninput="temperatureConverter2(this.value)" onchange="temperatureConverter2(this.value)">
+</p>
+<p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+<script>
+function temperatureConverter2(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputFahrenheit").innerHTML=(valNum*1.8)+32;
+}
+</script>
+
+<!-------------------------------- batas---------------------------->
+<h3>Celsius ka Kelvin</h3>
+
+<p>
+  <label>Celsius</label>
+  <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter3(this.value)" onchange="temperatureConverter3(this.value)">
+</p>
+<p>Kelvin: <span id="outputKelvin2"></span></p>
+
+<script>
+function temperatureConverter3(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputKelvin2").innerHTML=valNum+273.15;
+}
+</script>
+
+
+<!-------------------------------- batas---------------------------->
+<h3>Kelvin Ka Fahrenheit</h3>
+<p>
+  <label>Kelvin</label>
+  <input id="inputKelvin" type="number" placeholder="Kelvin" oninput="temperatureConverter4(this.value)" onchange="temperatureConverter4(this.value)">
+</p>
+<p>Fahrenheit: <span id="outputFahrenheit3"></span></p>
+
+<script>
+function temperatureConverter4(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputFahrenheit3").innerHTML=((valNum-273.15)*1.8)+32;
+}
+</script>
+
+
+<!-------------------------------- batas---------------------------->
+<h3>Kelvin ka Celsius</h3>
+<p>
+  <label>Kelvin</label>
+  <input id="inputKelvin" type="number" placeholder="Kelvin" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Celcius: <span id="outputCelcius"></span></p>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=valNum-273.15;
+}
+</script>
+
+</body>
+</html>

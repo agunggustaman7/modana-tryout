@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="tes"></p>
+	<script type="text/javascript">
+		var umur = [12,51,34,16,19];
+		function checkAdult(age){
+			return age <=21;
+		}
+		
+			document.getElementById("tes").innerHTML = umur.filter(checkAdult);
+	
+	</script>
+
+</body>
+</html>
